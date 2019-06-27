@@ -1,6 +1,15 @@
-function search() {
-    let _names = document.querySelector("#student_name").value
+function capital_letter(str) 
+{
+    str = str.split(" ");
 
+    for (var i = 0, x = str.length; i < x; i++) {
+        str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+    }
+
+    return str.join(" ");
+}
+function search() {
+    let _names = capital_letter(document.querySelector("#student_name").value.toLowerCase());    
     let = _content = "";
     let results = [];
     if (_names !== "") {
