@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Correo Institucional | UNESUM</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+                integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y"
+                crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+        <header class="header">
+
+                <h1>Universidad Estatal del Sur de Manabí
+                        <figure>
+                                <img class="logo" src="img/logo.png" alt="unesum">
+                        </figure>
+                </h1>
+
+        </header>
+
+        <div class="container">
+
+                <form class="reg-form">
+
+
+                        <label for="">Cedula/Pasaporte:</label>
+                        <input type="text" class="form-control" id="doc_id" required>
+
+
+                        <label for="">Apellido Paterno:</label>
+                        <input type="text" class="form-control" id="ap1" required>
+
+                        <label for="">Apellido Materno:</label>
+                        <input type="text" class="form-control" id="ap2" required>
+
+                        <label for="">Primer Nombre:</label>
+                        <input type="text" class="form-control" id="name1" required>
+
+
+                        <label for="">Segundo Nombre:</label>
+                        <input type="text" class="form-control" id="name2" required>
+
+
+
+                        <label for="">Celular:</label>
+                        <input type="text" class="form-control" id="cel" required>
+
+                        <label for="">Correo Electónico:</label>
+                        <input type="text" class="form-control" id="email" required>
+
+
+                        <button class="btn mg10 rht" type="button" onclick="form_validate(event)">
+                                <i class="fas fa-save"></i> Guardar
+                        </button>
+                </form>
+        </div>
+
+
+
+        </div>
+
+        <div class="notify">
+                <span onclick="document.querySelector('.notify').style.display='none'" class="btn-close">&times;</span>
+                <div class="notity-header">Unidad de Sisemas Informáticos | UNESUM</div>
+                <div class="popup">
+                        <div class="notify-content">
+                        </div>
+                </div>
+                <div class="notity-footer">
+                        <button id="btnOk">
+                                Confirmar
+                        </button>
+
+                </div>
+
+        </div>
+        <footer>
+                &copy; <span id="year"></span> Unidad de Sistemas Informáticos
+        </footer>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="js/main.js"> </script>
+        <script>
+                document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+</body>
+
+</html>
