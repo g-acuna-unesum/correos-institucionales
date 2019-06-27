@@ -23,7 +23,7 @@ function search() {
                     });
                 }
                 else {
-                    document.querySelector('.notify-content').innerHTML = 'Ud no consta con correo institucional. <a href="registrarse.html">Registrase</a>';
+                    document.querySelector('.notify-content').innerHTML = 'Ud no consta con correo institucional. <a href="https://forms.gle/d3s9FBqL5oCxDktr7" target="_blank">Registrase</a>';
 
                     document.querySelector('.notify').style.display = 'block';
                     document.querySelector('#btnOk').style.display = 'none';
