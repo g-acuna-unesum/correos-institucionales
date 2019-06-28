@@ -9,10 +9,11 @@ function capital_letter(str)
     return str.join(" ");
 }
 function search() {
-    let _names = capital_letter(document.querySelector("#student_name").value.toLowerCase());    
+    let _names = document.querySelector("#student_name").value;    
     let = _content = "";
     let results = [];
     if (_names !== "") {
+        _names = capital_letter(document.querySelector("#student_name").value.toLowerCase()); 
         axios.get('data/bd.json').then(
             response => {
                 response.data.emails.forEach(student => {
