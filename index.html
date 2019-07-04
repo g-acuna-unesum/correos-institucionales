@@ -2,63 +2,62 @@
 <html lang="es">
 
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Correo Institucional | UNESUM</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="icon"   href="img/logo.png" type="image/png">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
-                integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y"
-                crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Correo Institucional | UNESUM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+        integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
 
 
 </head>
 
 <body oncontextmenu="return false">
-        <header class="header">
+    <header class="header">
 
-                <h1>Universidad Estatal del Sur de Manabí
-                        <figure>
-                                <img class="logo" src="img/logo.png" alt="unesum">
-                        </figure>
-                </h1>
+        <h1>Universidad Estatal del Sur de Manabí
+            <figure>
+                <img class="logo" src="img/logo.png" alt="unesum">
+            </figure>
+        </h1>
 
-        </header>
+    </header>
 
-        <div class="container">
+    <div class="container">
 
 
-               
 
-                        <div class="row">
-                                <label for="">Apellidos y Nombres:</label>
 
-                                <input type="text" class='mg10' id="student_name" onkeypress="call_search(event)">
+        <div class="row">
+            <label for="">Apellidos y Nombres:</label>
 
-                                <button class="btn mg10" type="button" id="_btn_search" onclick="search()">
-                                        <i class="fas fa-search"></i>
-                                </button>
+            <input type="text" class='mg10' id="student_name" onkeypress="call_search(event)">
 
-                        </div>
-              
+            <button class="btn mg10" type="button" id="_btn_search" onclick="search()">
+                <i class="fas fa-search"></i>
+            </button>
 
-                <table>
-                        <thead>
-                                <th>
-                                        Estudiante
-                                </th>
-                                <th>
-                                        Correo
-                                </th>
-                        </thead>
-                        <tbody id="resp">
-
-                        </tbody>
-                </table>
         </div>
 
-        <div class="notify">
+
+        <table>
+            <thead>
+                <th>
+                    Estudiante
+                </th>
+                <th>
+                    Correo
+                </th>
+            </thead>
+            <tbody id="resp">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="notify">
         <span onclick="document.querySelector('.notify').style.display='none'" class="btn-close">&times;</span>
         <div class="notity-header">Unidad de Sisemas Informáticos | UNESUM</div>
         <div class="popup">
@@ -71,15 +70,16 @@
             </button>
 
         </div>
+    </div>
 
 
         <footer>
-                &copy; <span id="year"></span> Unidad de Sistemas Informáticos
+            &copy; <span id="year"></span> Unidad de Sistemas Informáticos
         </footer>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="js/main.js"> </script>
         <script>
-                document.getElementById("year").innerHTML = new Date().getFullYear();
+            document.getElementById("year").innerHTML = new Date().getFullYear();
         </script>
 </body>
 
